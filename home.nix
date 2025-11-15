@@ -35,6 +35,14 @@
     userEmail = "bottlenix@gmail.com";
     extraConfig = {
       init.defaultBranch = "main";
+
+      # create a git alias so that you can run $ git graph to get:
+      # * 18844fa: add .gitignore file
+      # * 454797f: install fish shell
+      # * 39894c2: turn off osprober
+      # * 924f400: install vscode
+      # * a279ef3: initial commit
+      alias.graph = "log --pretty=format:\"%h: %s\" --graph";
     };
   };
 
