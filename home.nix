@@ -43,7 +43,7 @@
       # * 924f400: install vscode
       # * a279ef3: initial commit
       # alias.graph = "log --pretty=format:\"%h: %s\" --graph";
-      alias.history = "log --oneline --decorate";
+      alias.history = "log --all --oneline --decorate";
     };
   };
 
