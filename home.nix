@@ -6,11 +6,14 @@
   home.username = "samir";
   home.homeDirectory = "/home/samir";
 
+  programs.fish = {
+      enable = true;
+  };
+
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     htop
     vim
-    # fortune
   ];
 
   # This value determines the Home Manager release that your
@@ -52,12 +55,6 @@
           # }
       # ];
   };
-
-#  services.gpg-agent = {
-#    enable = true;
-#    defaultCacheTtl = 1800;
-#    enableSshSupport = true;
-#  };
 
 #  see https://nixos-and-flakes.thiscute.world/nixos-with-flakes/start-using-home-manager#getting-started-with-home-manager
 #  for more examples on how to configure home.nix

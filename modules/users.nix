@@ -11,4 +11,7 @@
       # Add user-specific packages here
     ];
   };
+
+  programs.fish.enable = true;
+  users.defaultUserShell = pkgs.fish;
 }
